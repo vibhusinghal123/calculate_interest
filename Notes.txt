@@ -1,0 +1,5 @@
+1) Assumed 2 events, one event consumed account open details from one kafka topic (accountOpenDetail) and other events consumed daily balance details from other kafka topic (balanceDetail).
+2) Once interest get calculated, send interest amount along with account details to other kafka topic (monthlyInterestDetail).
+3) With respect to multi instance architecture, either we can deploy this application on K8s cluster and having multiple pods up or we can use cloud deployment using ECS or ECR.
+4) Assumed Rate of Interest some random number i.e. 5%.
+5) Used SpringBoot, Kafka and Maven.
